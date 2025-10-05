@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid1:CSS</title>
+    <style>
+        .grid1{
+            grid-area: header;
+            height: 40px;
+            background-color: blue;
+            color: rgb(243, 241, 238);
+            line-height: 40px;
+        }
+        .grid2{
+            grid-area: left;
+            height: 400px;
+            border: 1px solid;
+        }
+        .grid3{
+            grid-area: main;
+        }
+        .grid4{
+            grid-area: right;
+        }
+        .grid5{
+            grid-area: footer;
+            height: 80px;
+        }
+        .gridcontainer{
+            display: grid;
+            grid-template-areas:
+                'header header header header header header header header'
+                'left main main main main main main right'
+                'footer footer footer footer footer footer footer footer';
+            gap: 8px;
+            background-color: azure;
+        }
+        div{
+            text-align: center;
+        }
+        a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="grid1">
+            <a href>Home</a>
+            <a href>About</a>
+            <a href>Contact</a>
+            <a href>Products</a>
+            <a href>Customers</a>
+            <a href>Orders</a>
+            <a href>Sales</a>
+            <a href>Payments</a>
+            <a href>Login</a>
+            <a href>Signup</a>
+        </div>
+        <div class="grid2">Left</div>
+        <div class="grid3">Main</div>
+        <div class="grid4">Right</div>
+        <div class="grid5">Footer</div>
+    </div>
+</body>
+</html>

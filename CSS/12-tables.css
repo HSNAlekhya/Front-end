@@ -1,0 +1,35 @@
+table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+caption{
+    font-size: 25px;
+    background-color: rgb(2, 142, 116);
+    color: aliceblue;
+    padding: 15px;
+}
+table,th,td{
+    border: 2px solid rgb(247, 4, 4);
+    border-collapse: collapse;
+}
+th{
+    background-color: aqua;
+    height: 25px;
+    padding: 5px;
+    color: rgb(167, 13, 149);
+}
+tr:hover{
+    font-size: 25px;
+    background-color: bisque;
+    color: rgb(6, 243, 77);
+    text-align: center;
+}
+td{
+    line-height: 35px;
+    text-align:center;
+}
+tr:nth-child(odd){
+    background-color: rgb(8, 235, 61);
+    color: aliceblue;
+}
