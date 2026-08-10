@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boxsizing</title>
+        <style>
+            .parent{
+                border: 5px solid rgb(8, 252, 81)
+                height: 250px;
+                width: 210px;
+            }
+            .child{
+                border: 15px solid rgb(247, 0, 255)
+                height: inherit;
+                width: inherit;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </body>
+</html>
+            

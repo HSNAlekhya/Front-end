@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selectors:CSS</title>
+        <style>
+            header{
+                text-align: center;
+                background-color: rgb(238, 5, 191);
+                color:rgb(115, 228, 143)
+            }
+            .main1{
+                color: rgb(192, 52, 52);
+            }
+            #h3_2{
+                background-color: rgb(244, 184, 110);
+            }
+            a[href="/index.html"]{
+                text-decoration: none;
+                background-color: rgb(223, 243, 10);
+                font-size: 35px;
+                color: rgb(43, 113, 244);
+            }
+            header:hover{
+                text-decoration: none;
+                text-align: left;
+                background-color: aqua;
+            }
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Web App Development
+            </h1>
+            <a href="/index.html">Home</a>
+            <a href="/inline.html">Inline</a>
+            <a href="/internal.html">Internal</a>
+            <a href="/external.html">External</a>
+            <a href="/priority.html">Priority</a>
+        </header>
+        <div class="main1">
+            <h3>This is my selectors page</h3>
+            <h3 id="h3_2">This is my selectors page</h3>
+            <h3>This is my selectors page</h3>
+        </div>
+        <footer>
+            <h1>Thanks for visiting...... guys</h1>
+        </footer>
+    </body>
+</html>
