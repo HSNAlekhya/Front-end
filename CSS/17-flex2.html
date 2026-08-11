@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex2:CSS</title>
+    <style>
+        header{
+            text-align: center;
+            border: 5px solid rgb(96, 218, 102);
+            margin-bottom: 0px;
+        }
+        .container{
+            border: 2px solid rgb(77, 2, 135);
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(150, 193, 230);
+            height: 200px;
+            gap: 10px;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        .container > .flex1{
+            background-color: rgb(235, 173, 234);
+            font-size: 15px;
+        }
+        menu{
+            margin-top: 5px;
+        }
+        .menucontainer{
+            display: flex;
+            border: 2px solid rgb(100, 191, 100);
+            justify-content:space-evenly;
+            font-size: 20px;
+            margin-top: 2px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Web App Development
+        </h1>
+    </header>
+    <menu>
+        <nav>
+            <div class="menucontainer">
+                <div>Home</div>
+                <div>About</div>
+                <div>Images</div>
+                <div>Maps</div>
+                <div>Camera</div>
+                <div>Copilot</div>
+            </div>
+        </nav>
+    </menu>
+    <div class="container">
+        <div class="flex1">Products</div>
+        <div class="flex1">Customers</div>
+        <div class="flex1">Orders</div>
+        <div class="flex1">Sales</div>
+        <div class="flex1">Payments</div>
+        <div class="flex1">Inventory</div>
+    </div>
+</body>
+</html>
